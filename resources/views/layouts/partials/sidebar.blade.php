@@ -34,12 +34,22 @@
             <li class="header">{{ trans('adminlte_lang::message.header') }}</li>
             <!-- Optionally, you can add icons to the links -->
             <li class="treeview"><a href="{{ url('dashboard') }}"><i class='fa fa-dashboard'></i> <span>{{ trans('adminlte_lang::message.dashboard') }}</span></a></li>
-            <li><a href="#"><i class='fa fa-gears'></i> <span>{{ trans('adminlte_lang::message.maintenance') }}</span></a></li>
+            <li class="treeview"><a href="{{ url('viewinventory') }}"><i class='fa fa-table'></i> <span>{{ trans('adminlte_lang::message.viewinventory') }}</span></a></li>
             <li class="treeview">
-                <a href="#"><i class='fa fa-link'></i> <span>{{ trans('adminlte_lang::message.multilevel') }}</span> <i class="fa fa-angle-left pull-right"></i></a>
+                <a href="#"><i class='fa fa-gears'></i> <span>{{ trans('adminlte_lang::message.maintenance') }}</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a href="#">{{ trans('adminlte_lang::message.linklevel2') }}</a></li>
-                    <li><a href="#">{{ trans('adminlte_lang::message.linklevel2') }}</a></li>
+                    <li><a href="#">{{ trans('adminlte_lang::message.departments') }}</a></li>
+                    <li><a href="#">{{ trans('adminlte_lang::message.division') }}</a></li>
+                    <li><a href="#">{{ trans('adminlte_lang::message.location') }}</a></li>
+                    <li><a href="#">{{ trans('adminlte_lang::message.equipment') }}</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#"><i class='fa fa-exchange'></i> <span>{{ trans('adminlte_lang::message.audit') }}</span> <i class="fa fa-angle-left pull-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a href="{{ url('transfer') }}">{{ trans('adminlte_lang::message.transfer') }}</a></li>
+                    <li><a href="{{ url('disposal') }}">{{ trans('adminlte_lang::message.disposal') }}</a></li>
+                    <li><a href="{{ url('locationtracker') }}">{{ trans('adminlte_lang::message.locationtracker') }}</a></li>
                 </ul>
             </li>
         </ul><!-- /.sidebar-menu -->
