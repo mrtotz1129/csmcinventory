@@ -23,4 +23,15 @@ Route::get('dashboard', function () {
 Route::get('viewinventory', function () {
     return view('inventoryview');
 });
-
+Route::get('departments', function () {
+    return view('departments');
+});
+Route::get('location', function () {
+    return view('location');
+});
+Route::get('division', function () {
+    return view('division');
+});
+Route::get('equipment', function () {
+    return view('equipment');
+});

@@ -38,14 +38,14 @@
             <li class="treeview">
                 <a href="#"><i class='fa fa-gears'></i> <span>{{ trans('adminlte_lang::message.maintenance') }}</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a href="#">{{ trans('adminlte_lang::message.departments') }}</a></li>
-                    <li><a href="#">{{ trans('adminlte_lang::message.division') }}</a></li>
-                    <li><a href="#">{{ trans('adminlte_lang::message.location') }}</a></li>
-                    <li><a href="#">{{ trans('adminlte_lang::message.equipment') }}</a></li>
+                    <li><a href="{{ url('departments') }}">{{ trans('adminlte_lang::message.departments') }}</a></li>
+                    <li><a href="{{ url('division') }}">{{ trans('adminlte_lang::message.division') }}</a></li>
+                    <li><a href="{{ url('location') }}">{{ trans('adminlte_lang::message.location') }}</a></li>
+                    <li><a href="{{ url('equipment') }}">{{ trans('adminlte_lang::message.equipment') }}</a></li>
                 </ul>
             </li>
             <li class="treeview">
-                <a href="#"><i class='fa fa-exchange'></i> <span>{{ trans('adminlte_lang::message.audit') }}</span> <i class="fa fa-angle-left pull-right"></i></a>
+                <a href="{{ url('audit') }}"><i class='fa fa-exchange'></i> <span>{{ trans('adminlte_lang::message.audit') }}</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
                     <li><a href="{{ url('transfer') }}">{{ trans('adminlte_lang::message.transfer') }}</a></li>
                     <li><a href="{{ url('disposal') }}">{{ trans('adminlte_lang::message.disposal') }}</a></li>
