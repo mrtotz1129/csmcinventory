@@ -35,3 +35,12 @@ Route::get('division', function () {
 Route::get('equipment', function () {
     return view('equipment');
 });
+Route::get('transfer', function () {
+    return view('transfer');
+});
+Route::get('audit', function () {
+    return view('audit');
+});
+Route::get('locationtracker', function () {
+    return view('locationtracker');
+});
