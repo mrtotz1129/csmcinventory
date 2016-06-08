@@ -8,6 +8,18 @@
 @section('main-content')
     <div class="row">
         <div class="col-xs-12">
+            <div class="btn-group">
+                <button class="btn btn-danger" type="button">Options</button>
+                <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown" type="button" aria-expanded="true">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Add Entries</a>
+                    <li><a href="#">Edit Entries</a>
+                    <li><a href="#">Refresh Entries</a>
+                </ul>
+            </div>
             <div class="box">
                 <div class="box-header">
                     <h3 class="box-title">Location Manager</h3>
@@ -29,7 +41,7 @@
                                     </label>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-6"></a>
                                 <div id="location_filter" class="dataTables_filter">
                                     <label>
                                         Search:

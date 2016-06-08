@@ -38,8 +38,8 @@ Route::get('equipment', function () {
 Route::get('transfer', function () {
     return view('transfer');
 });
-Route::get('audit', function () {
-    return view('audit');
+Route::get('disposal', function () {
+    return view('disposal');
 });
 Route::get('locationtracker', function () {
     return view('locationtracker');
